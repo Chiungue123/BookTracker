@@ -1,0 +1,5 @@
+package com.booktracker.backend.jpa;
+
+public class BookJPA {
+
+}
