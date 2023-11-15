@@ -21,7 +21,7 @@ spring:
     show-sql: true # Displays SQL statements in the console
     properties: #
       hibernate: # ORM Framework for mapping entities into SQL commands, simplifies database operations
-       # ddl-auto: validate # Ensures congruency between SQL tables and their respective entity classes before runtime, discrepancies result in a compiling error.
-        '[format_sql]': true # Formats the SQL in the log for improved readability.
-        dialect: org.hibernate.dialect.MySQLDialect # Hibernate will generate SQL statements compatibilible with MySQL .
-        naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy # Converts the attribute names from CamelCase(Java Convention) to UpperCase(SQL Convention)
+      ddl-auto: validate # Ensures congruency between SQL tables and their respective entity classes before runtime, discrepancies result in a compiling error.
+      '[format_sql]': true # Formats the SQL in the log for improved readability.
+      dialect: org.hibernate.dialect.MySQLDialect # Hibernate will generate SQL statements compatibilible with MySQL .
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy # Converts the attribute names from CamelCase(Java Convention) to UpperCase(SQL Convention)
