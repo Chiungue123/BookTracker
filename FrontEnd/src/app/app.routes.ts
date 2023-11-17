@@ -5,6 +5,6 @@ import { BookCreateComponent } from './book-create/book-create.component';
 
 export const routes: Routes = [
     { path: '', component: MenuComponent},
-    { path: '/list', component: BookListComponent},
-    { path: '/create', component: BookCreateComponent}
+    { path: 'list', component: BookListComponent},
+    { path: 'create', component: BookCreateComponent}
 ];
